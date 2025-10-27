@@ -2,7 +2,8 @@ import nltk # pyright: ignore[reportMissingImports]
 
 from nltk.corpus import wordnet  # pyright: ignore[reportMissingImports]
 
-
+nltk.download("wordnet")
+nltk.download("punkt")
 
 class dictionary:
     def __init__(self):
@@ -44,5 +45,6 @@ if __name__ =="__main__":
         print("antonyms: ",dict_obj.antonyms(word))
         
         
+
 
         
